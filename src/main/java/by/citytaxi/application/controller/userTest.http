@@ -1,0 +1,66 @@
+GET http://localhost:8080/user/1
+apiKey: [B@3afd5148
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "id": 1,
+  "userRole": "ADMIN",
+  "firstName": "string",
+  "lastName": "string",
+  "email": "string@gmail.com",
+  "password": "string",
+  "token": null
+  }
+
+###
+
+PUT http://localhost:8080/user/1
+apiKey: [B@3afd5148
+Content-Type: application/json
+
+{
+  "userRole": "ADMIN",
+  "user": {
+    "id": 1,
+    "userRole": "ADMIN",
+    "firstName": "Test-string",
+    "lastName": "Test-string",
+    "email": "Test-string@gmail.com",
+    "password": "string",
+    "token": "[B@3afd5148"
+   }
+  }
+
+###
+
+DELETE http://localhost:8080/user/1
+apiKey: [B@3afd5148
+Content-Type: application/json
+
+{
+  "userRole": "USER"
+  }
+
+###
+
+POST http://localhost:8080/user/login
+Content-Type: application/json
+
+{
+  "user": {
+    "id": 1,
+    "email": "string@gmail.com",
+    "password": "string"
+  }
+}
+
+###
+
+POST http://localhost:8080/user/logout
+apiKey: [B@3afd5148
+
+###

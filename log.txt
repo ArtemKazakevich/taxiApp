@@ -1,0 +1,636 @@
+2020-03-19 09:53:51.078  INFO 4732 --- [restartedMain] by.citytaxi.application.Application      : Starting Application on M25-419-11485 with PID 4732 (started by kazakevich_av in D:\Курсы\Практика\HomeWork\TaxiApp)
+2020-03-19 09:53:51.084  INFO 4732 --- [restartedMain] by.citytaxi.application.Application      : No active profile set, falling back to default profiles: default
+2020-03-19 09:53:51.308  INFO 4732 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\kazakevich_av\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-19 09:53:51.310  INFO 4732 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-19 09:53:51.310  INFO 4732 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-19 09:53:53.844  INFO 4732 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-19 09:53:54.236  INFO 4732 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 327ms. Found 1 JPA repository interfaces.
+2020-03-19 09:53:55.775  INFO 4732 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-19 09:53:55.807  INFO 4732 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-19 09:53:55.807  INFO 4732 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-19 09:53:56.017  INFO 4732 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-19 09:53:56.017  INFO 4732 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4707 ms
+2020-03-19 09:53:56.113  INFO 4732 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-19 09:53:56.207  INFO 4732 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-19 09:53:56.212  INFO 4732 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-03-19 09:53:56.756  INFO 4732 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-19 09:53:56.933  INFO 4732 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-19 09:53:57.090  INFO 4732 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-19 09:53:57.324  INFO 4732 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-03-19 09:53:58.276  INFO 4732 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-19 09:53:58.295  INFO 4732 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-19 09:53:58.435  INFO 4732 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-19 09:53:59.471  WARN 4732 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-19 09:53:59.609  INFO 4732 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-19 09:54:00.017  INFO 4732 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-19 09:54:00.033  INFO 4732 --- [restartedMain] by.citytaxi.application.Application      : Started Application in 11.345 seconds (JVM running for 15.033)
+2020-03-19 09:54:00.035  INFO 4732 --- [restartedMain] by.citytaxi.application.Application      : The program is running
+2020-03-19 09:54:16.526  INFO 4732 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-19 09:54:16.527  INFO 4732 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-19 09:54:16.582  INFO 4732 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 55 ms
+2020-03-19 09:54:17.087  WARN 4732 --- [http-nio-8080-exec-1] b.c.a.c.e.UserExceptionController        : Bad Request
+2020-03-19 09:54:17.142  WARN 4732 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.UserBadRequestException]
+2020-03-19 09:54:24.855  INFO 4732 --- [http-nio-8080-exec-2] b.c.a.controller.UserController          : The user is created
+2020-03-19 09:54:32.124  WARN 4732 --- [http-nio-8080-exec-4] b.c.a.c.e.UserExceptionController        : Bad Request
+2020-03-19 09:54:32.127  WARN 4732 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.UserBadRequestException]
+2020-03-19 09:54:38.682  INFO 4732 --- [http-nio-8080-exec-5] b.c.a.controller.UserController          : Login completed
+2020-03-19 09:54:55.794  WARN 4732 --- [http-nio-8080-exec-7] b.c.a.c.e.UserExceptionController        : Bad Request
+2020-03-19 09:54:55.798  WARN 4732 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.UserBadRequestException]
+2020-03-19 09:55:01.057  WARN 4732 --- [http-nio-8080-exec-8] b.c.a.c.e.UserExceptionController        : Bad Request
+2020-03-19 09:55:01.060  WARN 4732 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.UserBadRequestException]
+2020-03-19 09:57:14.032  WARN 4732 --- [http-nio-8080-exec-10] b.c.a.c.e.UserExceptionController        : Bad Request
+2020-03-19 09:57:14.036  WARN 4732 --- [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.UserBadRequestException]
+2020-03-19 10:13:23.737  INFO 7428 --- [restartedMain] by.citytaxi.application.Application      : Starting Application on M25-419-11485 with PID 7428 (started by kazakevich_av in D:\Курсы\Практика\HomeWork\TaxiApp)
+2020-03-19 10:13:23.747  INFO 7428 --- [restartedMain] by.citytaxi.application.Application      : No active profile set, falling back to default profiles: default
+2020-03-19 10:13:23.801  INFO 7428 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\kazakevich_av\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-19 10:13:23.802  INFO 7428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-19 10:13:23.802  INFO 7428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-19 10:13:24.458  INFO 7428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-19 10:13:24.520  INFO 7428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 1 JPA repository interfaces.
+2020-03-19 10:13:24.966  INFO 7428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-19 10:13:24.974  INFO 7428 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-19 10:13:24.975  INFO 7428 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-19 10:13:25.059  INFO 7428 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-19 10:13:25.060  INFO 7428 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1258 ms
+2020-03-19 10:13:25.089  INFO 7428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-19 10:13:25.168  INFO 7428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-19 10:13:25.173  INFO 7428 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-03-19 10:13:25.267  INFO 7428 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-19 10:13:25.313  INFO 7428 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-19 10:13:25.409  INFO 7428 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-19 10:13:25.486  INFO 7428 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-03-19 10:13:25.929  INFO 7428 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-19 10:13:25.933  INFO 7428 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-19 10:13:25.959  INFO 7428 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-19 10:13:26.246  WARN 7428 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-19 10:13:26.344  INFO 7428 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-19 10:13:26.564  INFO 7428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-19 10:13:26.567  INFO 7428 --- [restartedMain] by.citytaxi.application.Application      : Started Application in 3.255 seconds (JVM running for 3.964)
+2020-03-19 10:13:26.569  INFO 7428 --- [restartedMain] by.citytaxi.application.Application      : The program is running
+2020-03-19 10:13:32.681  INFO 7428 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-19 10:13:32.681  INFO 7428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-19 10:13:32.688  INFO 7428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-03-19 10:13:32.861  WARN 7428 --- [http-nio-8080-exec-1] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 10:13:32.870  WARN 7428 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 10:13:46.379  INFO 7428 --- [http-nio-8080-exec-2] b.c.a.controller.UserController          : The user is created
+2020-03-19 10:14:17.177  WARN 7428 --- [http-nio-8080-exec-4] b.c.a.c.e.UserExceptionController        : Invalid email/password supplied
+2020-03-19 10:14:17.179  WARN 7428 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.AuthenticationUserException: Invalid email/password supplied]
+2020-03-19 10:14:22.582  INFO 7428 --- [http-nio-8080-exec-5] b.c.a.controller.UserController          : Login completed
+2020-03-19 10:14:45.367  WARN 7428 --- [http-nio-8080-exec-7] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 10:14:45.369  WARN 7428 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 10:22:17.093  WARN 7428 --- [http-nio-8080-exec-8] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 10:22:17.096  WARN 7428 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 10:30:33.713  INFO 5624 --- [restartedMain] by.citytaxi.application.Application      : Starting Application on M25-419-11485 with PID 5624 (started by kazakevich_av in D:\Курсы\Практика\HomeWork\TaxiApp)
+2020-03-19 10:30:33.716  INFO 5624 --- [restartedMain] by.citytaxi.application.Application      : No active profile set, falling back to default profiles: default
+2020-03-19 10:30:33.753  INFO 5624 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\kazakevich_av\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-19 10:30:33.754  INFO 5624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-19 10:30:33.754  INFO 5624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-19 10:30:34.448  INFO 5624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-19 10:30:34.506  INFO 5624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42ms. Found 1 JPA repository interfaces.
+2020-03-19 10:30:34.938  INFO 5624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-19 10:30:34.945  INFO 5624 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-19 10:30:34.945  INFO 5624 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-19 10:30:35.023  INFO 5624 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-19 10:30:35.024  INFO 5624 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1269 ms
+2020-03-19 10:30:35.053  INFO 5624 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-19 10:30:35.136  INFO 5624 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-19 10:30:35.141  INFO 5624 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-03-19 10:30:35.246  INFO 5624 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-19 10:30:35.290  INFO 5624 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-19 10:30:35.366  INFO 5624 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-19 10:30:35.439  INFO 5624 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-03-19 10:30:35.887  INFO 5624 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-19 10:30:35.893  INFO 5624 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-19 10:30:35.917  INFO 5624 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-19 10:30:36.197  WARN 5624 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-19 10:30:36.287  INFO 5624 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-19 10:30:36.492  INFO 5624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-19 10:30:36.494  INFO 5624 --- [restartedMain] by.citytaxi.application.Application      : Started Application in 3.257 seconds (JVM running for 4.037)
+2020-03-19 10:30:36.496  INFO 5624 --- [restartedMain] by.citytaxi.application.Application      : The program is running
+2020-03-19 10:30:47.363  INFO 5624 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-19 10:30:47.364  INFO 5624 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-19 10:30:47.370  INFO 5624 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-03-19 10:30:47.529  WARN 5624 --- [http-nio-8080-exec-1] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 10:30:47.538  WARN 5624 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 10:30:52.767  INFO 5624 --- [http-nio-8080-exec-2] b.c.a.controller.UserController          : The user is created
+2020-03-19 10:30:59.435  INFO 5624 --- [http-nio-8080-exec-4] b.c.a.controller.UserController          : Login completed
+2020-03-19 10:31:10.545  WARN 5624 --- [http-nio-8080-exec-6] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 10:31:10.547  WARN 5624 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 10:31:15.818  WARN 5624 --- [http-nio-8080-exec-7] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 10:31:15.821  WARN 5624 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 10:33:09.098  WARN 5624 --- [http-nio-8080-exec-7] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 10:33:09.101  WARN 5624 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 10:34:43.146  INFO 7008 --- [restartedMain] by.citytaxi.application.Application      : Starting Application on M25-419-11485 with PID 7008 (started by kazakevich_av in D:\Курсы\Практика\HomeWork\TaxiApp)
+2020-03-19 10:34:43.160  INFO 7008 --- [restartedMain] by.citytaxi.application.Application      : No active profile set, falling back to default profiles: default
+2020-03-19 10:34:43.223  INFO 7008 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\kazakevich_av\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-19 10:34:43.225  INFO 7008 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-19 10:34:43.225  INFO 7008 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-19 10:34:43.807  INFO 7008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-19 10:34:43.866  INFO 7008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 1 JPA repository interfaces.
+2020-03-19 10:34:44.299  INFO 7008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-19 10:34:44.306  INFO 7008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-19 10:34:44.306  INFO 7008 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-19 10:34:44.385  INFO 7008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-19 10:34:44.385  INFO 7008 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1160 ms
+2020-03-19 10:34:44.414  INFO 7008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-19 10:34:44.492  INFO 7008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-19 10:34:44.497  INFO 7008 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-03-19 10:34:44.587  INFO 7008 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-19 10:34:44.633  INFO 7008 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-19 10:34:44.711  INFO 7008 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-19 10:34:44.782  INFO 7008 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-03-19 10:34:45.238  INFO 7008 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-19 10:34:45.244  INFO 7008 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-19 10:34:45.272  INFO 7008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-19 10:34:45.572  WARN 7008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-19 10:34:45.682  INFO 7008 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-19 10:34:45.881  INFO 7008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-19 10:34:45.883  INFO 7008 --- [restartedMain] by.citytaxi.application.Application      : Started Application in 3.141 seconds (JVM running for 3.739)
+2020-03-19 10:34:45.885  INFO 7008 --- [restartedMain] by.citytaxi.application.Application      : The program is running
+2020-03-19 10:34:52.758  INFO 7008 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-19 10:34:52.759  INFO 7008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-19 10:34:52.764  INFO 7008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-03-19 10:34:52.912  INFO 7008 --- [http-nio-8080-exec-1] b.c.a.controller.UserController          : The user is created
+2020-03-19 10:34:59.023  INFO 7008 --- [http-nio-8080-exec-4] b.c.a.controller.UserController          : Login completed
+2020-03-19 10:35:06.614  INFO 7008 --- [http-nio-8080-exec-5] b.c.a.controller.UserController          : The list is made
+2020-03-19 10:35:25.062  INFO 4724 --- [restartedMain] by.citytaxi.application.Application      : Starting Application on M25-419-11485 with PID 4724 (started by kazakevich_av in D:\Курсы\Практика\HomeWork\TaxiApp)
+2020-03-19 10:35:25.067  INFO 4724 --- [restartedMain] by.citytaxi.application.Application      : No active profile set, falling back to default profiles: default
+2020-03-19 10:35:25.157  INFO 4724 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\kazakevich_av\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-19 10:35:25.158  INFO 4724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-19 10:35:25.158  INFO 4724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-19 10:35:25.756  INFO 4724 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-19 10:35:25.819  INFO 4724 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 1 JPA repository interfaces.
+2020-03-19 10:35:26.290  INFO 4724 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-19 10:35:26.298  INFO 4724 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-19 10:35:26.298  INFO 4724 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-19 10:35:26.387  INFO 4724 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-19 10:35:26.387  INFO 4724 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1228 ms
+2020-03-19 10:35:26.416  INFO 4724 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-19 10:35:26.490  INFO 4724 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-19 10:35:26.494  INFO 4724 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-03-19 10:35:26.589  INFO 4724 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-19 10:35:26.632  INFO 4724 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-19 10:35:26.708  INFO 4724 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-19 10:35:26.777  INFO 4724 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-03-19 10:35:27.233  INFO 4724 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-19 10:35:27.238  INFO 4724 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-19 10:35:27.263  INFO 4724 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-19 10:35:27.544  WARN 4724 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-19 10:35:27.635  INFO 4724 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-19 10:35:27.837  INFO 4724 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-19 10:35:27.840  INFO 4724 --- [restartedMain] by.citytaxi.application.Application      : Started Application in 3.167 seconds (JVM running for 3.798)
+2020-03-19 10:35:27.842  INFO 4724 --- [restartedMain] by.citytaxi.application.Application      : The program is running
+2020-03-19 10:35:36.261  INFO 4724 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-19 10:35:36.262  INFO 4724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-19 10:35:36.267  INFO 4724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-03-19 10:35:36.432  WARN 4724 --- [http-nio-8080-exec-1] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 10:35:36.441  WARN 4724 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 10:35:41.602  INFO 4724 --- [http-nio-8080-exec-2] b.c.a.controller.UserController          : The user is created
+2020-03-19 10:35:47.855  INFO 4724 --- [http-nio-8080-exec-4] b.c.a.controller.UserController          : Login completed
+2020-03-19 10:35:57.299  INFO 4724 --- [http-nio-8080-exec-6] b.c.a.controller.UserController          : The list is made
+2020-03-19 10:43:00.652  WARN 4724 --- [http-nio-8080-exec-3] b.c.a.c.e.UserExceptionController        : You don't have enough rights
+2020-03-19 10:43:00.654  WARN 4724 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.RoleUserException]
+2020-03-19 10:43:33.875  INFO 4724 --- [http-nio-8080-exec-5] b.c.a.controller.UserController          : User with id=1 was updated
+2020-03-19 10:43:38.635  INFO 4724 --- [http-nio-8080-exec-9] b.c.a.controller.UserController          : The list is made
+2020-03-19 10:44:32.926  INFO 4724 --- [http-nio-8080-exec-10] b.c.a.controller.UserController          : Exit successfully completed
+2020-03-19 10:44:39.036  WARN 4724 --- [http-nio-8080-exec-3] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 10:44:39.038  WARN 4724 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 10:44:46.850  INFO 4724 --- [http-nio-8080-exec-5] b.c.a.controller.UserController          : Login completed
+2020-03-19 10:45:00.350  INFO 4724 --- [http-nio-8080-exec-8] b.c.a.controller.UserController          : The list is made
+2020-03-19 10:45:46.227  WARN 4724 --- [http-nio-8080-exec-6] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 10:45:46.229  WARN 4724 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 10:46:11.279  INFO 8020 --- [restartedMain] by.citytaxi.application.Application      : Starting Application on M25-419-11485 with PID 8020 (started by kazakevich_av in D:\Курсы\Практика\HomeWork\TaxiApp)
+2020-03-19 10:46:11.285  INFO 8020 --- [restartedMain] by.citytaxi.application.Application      : No active profile set, falling back to default profiles: default
+2020-03-19 10:46:11.334  INFO 8020 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\kazakevich_av\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-19 10:46:11.335  INFO 8020 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-19 10:46:11.335  INFO 8020 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-19 10:46:11.868  INFO 8020 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-19 10:46:11.931  INFO 8020 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40ms. Found 1 JPA repository interfaces.
+2020-03-19 10:46:12.370  INFO 8020 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-19 10:46:12.378  INFO 8020 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-19 10:46:12.379  INFO 8020 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-19 10:46:12.472  INFO 8020 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-19 10:46:12.472  INFO 8020 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1137 ms
+2020-03-19 10:46:12.504  INFO 8020 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-19 10:46:12.583  INFO 8020 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-19 10:46:12.587  INFO 8020 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-03-19 10:46:12.681  INFO 8020 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-19 10:46:12.725  INFO 8020 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-19 10:46:12.799  INFO 8020 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-19 10:46:12.872  INFO 8020 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-03-19 10:46:13.315  INFO 8020 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-19 10:46:13.320  INFO 8020 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-19 10:46:13.350  INFO 8020 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-19 10:46:13.632  WARN 8020 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-19 10:46:13.729  INFO 8020 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-19 10:46:13.944  INFO 8020 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-19 10:46:13.947  INFO 8020 --- [restartedMain] by.citytaxi.application.Application      : Started Application in 3.094 seconds (JVM running for 3.776)
+2020-03-19 10:46:13.949  INFO 8020 --- [restartedMain] by.citytaxi.application.Application      : The program is running
+2020-03-19 10:46:40.070  INFO 8020 --- [http-nio-8080-exec-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-19 10:46:40.072  INFO 8020 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-19 10:46:40.089  INFO 8020 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-03-19 10:46:40.264  WARN 8020 --- [http-nio-8080-exec-8] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 10:46:40.270  WARN 8020 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 10:46:47.259  WARN 8020 --- [http-nio-8080-exec-1] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 10:46:47.262  WARN 8020 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 10:46:50.334  WARN 8020 --- [http-nio-8080-exec-6] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 10:46:50.338  WARN 8020 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 10:46:53.779  WARN 8020 --- [http-nio-8080-exec-5] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 10:46:53.782  WARN 8020 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 10:46:58.011  INFO 8020 --- [http-nio-8080-exec-4] b.c.a.controller.UserController          : The user is created
+2020-03-19 10:47:08.175  WARN 8020 --- [http-nio-8080-exec-10] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 10:47:08.179  WARN 8020 --- [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 10:47:12.545  WARN 8020 --- [http-nio-8080-exec-8] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 10:47:12.546  WARN 8020 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 10:47:16.849  WARN 8020 --- [http-nio-8080-exec-1] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 10:47:16.853  WARN 8020 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 10:47:20.552  WARN 8020 --- [http-nio-8080-exec-6] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 10:47:20.554  WARN 8020 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 10:47:22.892  INFO 8020 --- [http-nio-8080-exec-5] b.c.a.controller.UserController          : Login completed
+2020-03-19 10:47:36.741  INFO 8020 --- [http-nio-8080-exec-10] b.c.a.controller.UserController          : The list is made
+2020-03-19 10:48:37.281  INFO 8020 --- [http-nio-8080-exec-4] b.c.a.controller.UserController          : User with id=1 was updated
+2020-03-19 10:48:40.697  INFO 8020 --- [http-nio-8080-exec-2] b.c.a.controller.UserController          : The list is made
+2020-03-19 10:48:54.651  WARN 8020 --- [http-nio-8080-exec-5] b.c.a.c.e.UserExceptionController        : You don't have enough rights
+2020-03-19 10:48:54.653  WARN 8020 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.RoleUserException]
+2020-03-19 10:49:05.662  INFO 8020 --- [http-nio-8080-exec-4] b.c.a.controller.UserController          : User with id=1 was removed
+2020-03-19 12:06:02.589  INFO 9576 --- [restartedMain] by.citytaxi.application.Application      : Starting Application on M25-419-11485 with PID 9576 (started by kazakevich_av in D:\Курсы\Практика\HomeWork\TaxiApp)
+2020-03-19 12:06:02.591  INFO 9576 --- [restartedMain] by.citytaxi.application.Application      : No active profile set, falling back to default profiles: default
+2020-03-19 12:06:02.661  INFO 9576 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\kazakevich_av\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-19 12:06:02.661  INFO 9576 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-19 12:06:02.662  INFO 9576 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-19 12:06:03.190  INFO 9576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-19 12:06:03.255  INFO 9576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42ms. Found 1 JPA repository interfaces.
+2020-03-19 12:06:03.705  INFO 9576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-19 12:06:03.712  INFO 9576 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-19 12:06:03.713  INFO 9576 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-19 12:06:03.797  INFO 9576 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-19 12:06:03.797  INFO 9576 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1135 ms
+2020-03-19 12:06:03.827  INFO 9576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-19 12:06:03.903  INFO 9576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-19 12:06:03.908  INFO 9576 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-03-19 12:06:04.003  INFO 9576 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-19 12:06:04.048  INFO 9576 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-19 12:06:04.123  INFO 9576 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-19 12:06:04.193  INFO 9576 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-03-19 12:06:04.637  INFO 9576 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-19 12:06:04.641  INFO 9576 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-19 12:06:04.666  INFO 9576 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-19 12:06:04.945  WARN 9576 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-19 12:06:05.036  INFO 9576 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-19 12:06:05.246  INFO 9576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-19 12:06:05.249  INFO 9576 --- [restartedMain] by.citytaxi.application.Application      : Started Application in 3.077 seconds (JVM running for 3.706)
+2020-03-19 12:06:05.251  INFO 9576 --- [restartedMain] by.citytaxi.application.Application      : The program is running
+2020-03-19 12:06:10.856  INFO 9576 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-19 12:06:10.856  INFO 9576 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-19 12:06:10.862  INFO 9576 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-03-19 12:06:10.985  WARN 9576 --- [http-nio-8080-exec-1] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 12:06:10.996  WARN 9576 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 12:06:16.872  INFO 9576 --- [http-nio-8080-exec-2] b.c.a.controller.UserController          : The user is created
+2020-03-19 12:06:19.845  WARN 9576 --- [http-nio-8080-exec-4] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 12:06:19.849  WARN 9576 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 12:06:24.939  INFO 9576 --- [http-nio-8080-exec-5] b.c.a.controller.UserController          : Login completed
+2020-03-19 12:06:36.391  INFO 9576 --- [http-nio-8080-exec-7] b.c.a.controller.UserController          : The list is made
+2020-03-19 12:06:45.577  WARN 9576 --- [http-nio-8080-exec-9] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 12:06:45.579  WARN 9576 --- [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 12:06:49.830  INFO 9576 --- [http-nio-8080-exec-10] b.c.a.controller.UserController          : The list is made
+2020-03-19 12:07:18.125  INFO 8336 --- [restartedMain] by.citytaxi.application.Application      : Starting Application on M25-419-11485 with PID 8336 (started by kazakevich_av in D:\Курсы\Практика\HomeWork\TaxiApp)
+2020-03-19 12:07:18.128  INFO 8336 --- [restartedMain] by.citytaxi.application.Application      : No active profile set, falling back to default profiles: default
+2020-03-19 12:07:18.177  INFO 8336 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\kazakevich_av\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-19 12:07:18.178  INFO 8336 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-19 12:07:18.178  INFO 8336 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-19 12:07:18.737  INFO 8336 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-19 12:07:18.782  INFO 8336 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39ms. Found 1 JPA repository interfaces.
+2020-03-19 12:07:19.200  INFO 8336 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-19 12:07:19.207  INFO 8336 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-19 12:07:19.208  INFO 8336 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-19 12:07:19.286  INFO 8336 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-19 12:07:19.287  INFO 8336 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1109 ms
+2020-03-19 12:07:19.316  INFO 8336 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-19 12:07:19.399  INFO 8336 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-19 12:07:19.404  INFO 8336 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-03-19 12:07:19.500  INFO 8336 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-19 12:07:19.547  INFO 8336 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-19 12:07:19.623  INFO 8336 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-19 12:07:19.700  INFO 8336 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-03-19 12:07:20.159  INFO 8336 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-19 12:07:20.164  INFO 8336 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-19 12:07:20.188  INFO 8336 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-19 12:07:20.467  WARN 8336 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-19 12:07:20.561  INFO 8336 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-19 12:07:20.772  INFO 8336 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-19 12:07:20.775  INFO 8336 --- [restartedMain] by.citytaxi.application.Application      : Started Application in 3.08 seconds (JVM running for 3.789)
+2020-03-19 12:07:20.777  INFO 8336 --- [restartedMain] by.citytaxi.application.Application      : The program is running
+2020-03-19 12:07:31.620  INFO 8336 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-19 12:07:31.621  INFO 8336 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-19 12:07:31.627  INFO 8336 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-03-19 12:07:31.757  WARN 8336 --- [http-nio-8080-exec-1] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 12:07:31.770  WARN 8336 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 12:07:35.170  INFO 8336 --- [http-nio-8080-exec-2] b.c.a.controller.UserController          : The user is created
+2020-03-19 12:07:38.807  INFO 8336 --- [http-nio-8080-exec-4] b.c.a.controller.UserController          : Login completed
+2020-03-19 12:07:47.778  INFO 8336 --- [http-nio-8080-exec-6] b.c.a.controller.UserController          : The list is made
+2020-03-19 12:12:17.156  INFO 9348 --- [restartedMain] by.citytaxi.application.Application      : Starting Application on M25-419-11485 with PID 9348 (started by kazakevich_av in D:\Курсы\Практика\HomeWork\TaxiApp)
+2020-03-19 12:12:17.160  INFO 9348 --- [restartedMain] by.citytaxi.application.Application      : No active profile set, falling back to default profiles: default
+2020-03-19 12:12:17.201  INFO 9348 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\kazakevich_av\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-19 12:12:17.202  INFO 9348 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-19 12:12:17.202  INFO 9348 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-19 12:12:17.890  INFO 9348 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-19 12:12:17.938  INFO 9348 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42ms. Found 1 JPA repository interfaces.
+2020-03-19 12:12:18.391  INFO 9348 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-19 12:12:18.399  INFO 9348 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-19 12:12:18.400  INFO 9348 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-19 12:12:18.486  INFO 9348 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-19 12:12:18.486  INFO 9348 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1284 ms
+2020-03-19 12:12:18.516  INFO 9348 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-19 12:12:18.591  INFO 9348 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-19 12:12:18.596  INFO 9348 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-03-19 12:12:18.686  INFO 9348 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-19 12:12:18.730  INFO 9348 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-19 12:12:18.799  INFO 9348 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-19 12:12:18.874  INFO 9348 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-03-19 12:12:19.326  INFO 9348 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-19 12:12:19.330  INFO 9348 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-19 12:12:19.355  INFO 9348 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-19 12:12:19.628  WARN 9348 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-19 12:12:19.726  INFO 9348 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-19 12:12:19.929  INFO 9348 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-19 12:12:19.932  INFO 9348 --- [restartedMain] by.citytaxi.application.Application      : Started Application in 3.199 seconds (JVM running for 3.858)
+2020-03-19 12:12:19.934  INFO 9348 --- [restartedMain] by.citytaxi.application.Application      : The program is running
+2020-03-19 12:13:12.657  INFO 9348 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-19 12:13:12.657  INFO 9348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-19 12:13:12.663  INFO 9348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-03-19 12:13:12.784  WARN 9348 --- [http-nio-8080-exec-1] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 12:13:12.796  WARN 9348 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 12:13:19.838  WARN 9348 --- [http-nio-8080-exec-2] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 12:13:19.839  WARN 9348 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 12:13:24.251  WARN 9348 --- [http-nio-8080-exec-3] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 12:13:24.255  WARN 9348 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 12:13:26.647  WARN 9348 --- [http-nio-8080-exec-4] b.c.a.c.e.UserExceptionController        : Invalid email/password supplied
+2020-03-19 12:13:26.650  WARN 9348 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.AuthenticationUserException: Invalid email/password supplied]
+2020-03-19 12:13:40.117  WARN 9348 --- [http-nio-8080-exec-5] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 12:13:40.120  WARN 9348 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 12:13:47.212  INFO 9348 --- [http-nio-8080-exec-6] b.c.a.controller.UserController          : The user is created
+2020-03-19 12:13:50.554  WARN 9348 --- [http-nio-8080-exec-8] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 12:13:50.556  WARN 9348 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 12:13:55.414  WARN 9348 --- [http-nio-8080-exec-9] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 12:13:55.418  WARN 9348 --- [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 12:13:58.551  WARN 9348 --- [http-nio-8080-exec-10] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 12:13:58.554  WARN 9348 --- [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 12:14:01.955  WARN 9348 --- [http-nio-8080-exec-1] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 12:14:01.959  WARN 9348 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 12:14:03.862  INFO 9348 --- [http-nio-8080-exec-2] b.c.a.controller.UserController          : Login completed
+2020-03-19 12:14:34.617  INFO 9348 --- [http-nio-8080-exec-4] b.c.a.controller.UserController          : The list is made
+2020-03-19 12:15:35.053  INFO 9348 --- [http-nio-8080-exec-10] b.c.a.controller.UserController          : User with id=1 was updated
+2020-03-19 12:15:38.297  INFO 9348 --- [http-nio-8080-exec-8] b.c.a.controller.UserController          : The list is made
+2020-03-19 12:15:47.612  WARN 9348 --- [http-nio-8080-exec-3] b.c.a.c.e.UserExceptionController        : You don't have enough rights
+2020-03-19 12:15:47.615  WARN 9348 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.RoleUserException]
+2020-03-19 12:15:54.323  INFO 9348 --- [http-nio-8080-exec-10] b.c.a.controller.UserController          : Exit successfully completed
+2020-03-19 12:15:58.755  WARN 9348 --- [http-nio-8080-exec-4] b.c.a.c.e.UserExceptionController        : User is not logged in
+2020-03-19 12:15:58.758  WARN 9348 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.LoginUserException]
+2020-03-19 12:16:04.336  WARN 9348 --- [http-nio-8080-exec-6] b.c.a.c.e.UserExceptionController        : Invalid email/password supplied
+2020-03-19 12:16:04.339  WARN 9348 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [by.citytaxi.application.exception.user.AuthenticationUserException: Invalid email/password supplied]
+2020-03-19 13:28:52.168  INFO 2080 --- [restartedMain] by.citytaxi.application.Application      : Starting Application on M25-419-11485 with PID 2080 (started by kazakevich_av in D:\Курсы\Практика\HomeWork\TaxiApp)
+2020-03-19 13:28:52.170  INFO 2080 --- [restartedMain] by.citytaxi.application.Application      : No active profile set, falling back to default profiles: default
+2020-03-19 13:28:52.228  INFO 2080 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\kazakevich_av\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-19 13:28:52.229  INFO 2080 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-19 13:28:52.232  INFO 2080 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-19 13:28:52.864  INFO 2080 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-19 13:28:52.927  INFO 2080 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 1 JPA repository interfaces.
+2020-03-19 13:28:53.359  INFO 2080 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-19 13:28:53.366  INFO 2080 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-19 13:28:53.367  INFO 2080 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-19 13:28:53.445  INFO 2080 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-19 13:28:53.445  INFO 2080 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1212 ms
+2020-03-19 13:28:53.473  INFO 2080 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-19 13:28:53.549  INFO 2080 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-19 13:28:53.554  INFO 2080 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-03-19 13:28:53.645  INFO 2080 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-19 13:28:53.688  INFO 2080 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-19 13:28:53.758  INFO 2080 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-19 13:28:53.829  INFO 2080 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-03-19 13:28:54.298  INFO 2080 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-19 13:28:54.302  INFO 2080 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-19 13:28:54.328  INFO 2080 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-19 13:28:54.334  WARN 2080 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Initialization of bean failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/D:/%d0%9a%d1%83%d1%80%d1%81%d1%8b/%d0%9f%d1%80%d0%b0%d0%ba%d1%82%d0%b8%d0%ba%d0%b0/HomeWork/TaxiApp/target/classes/data.sql]: INSERT INTO car VALUES ('Audi', '1234 AB-7', 1); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Неверное количество столбцов
+Column count does not match; SQL statement:
+INSERT INTO car VALUES ('Audi', '1234 AB-7', 1) [21002-200]
+2020-03-19 13:28:54.542  WARN 2080 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-03-19 13:28:54.543  INFO 2080 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-19 13:28:54.548  INFO 2080 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-19 13:28:54.550  INFO 2080 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-03-19 13:28:54.568  INFO 2080 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-19 13:28:54.578 ERROR 2080 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Initialization of bean failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/D:/%d0%9a%d1%83%d1%80%d1%81%d1%8b/%d0%9f%d1%80%d0%b0%d0%ba%d1%82%d0%b8%d0%ba%d0%b0/HomeWork/TaxiApp/target/classes/data.sql]: INSERT INTO car VALUES ('Audi', '1234 AB-7', 1); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Неверное количество столбцов
+Column count does not match; SQL statement:
+INSERT INTO car VALUES ('Audi', '1234 AB-7', 1) [21002-200]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at by.citytaxi.application.Application.main(Application.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/D:/%d0%9a%d1%83%d1%80%d1%81%d1%8b/%d0%9f%d1%80%d0%b0%d0%ba%d1%82%d0%b8%d0%ba%d0%b0/HomeWork/TaxiApp/target/classes/data.sql]: INSERT INTO car VALUES ('Audi', '1234 AB-7', 1); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Неверное количество столбцов
+Column count does not match; SQL statement:
+INSERT INTO car VALUES ('Audi', '1234 AB-7', 1) [21002-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:622) ~[spring-jdbc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:49) ~[spring-jdbc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.runScripts(DataSourceInitializer.java:202) ~[spring-boot-autoconfigure-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.initSchema(DataSourceInitializer.java:119) ~[spring-boot-autoconfigure-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:91) ~[spring-boot-autoconfigure-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:38) ~[spring-boot-autoconfigure-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.DataSourceInitializedPublisher.publishEventIfRequired(DataSourceInitializedPublisher.java:99) ~[spring-boot-autoconfigure-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.DataSourceInitializedPublisher.postProcessAfterInitialization(DataSourceInitializedPublisher.java:90) ~[spring-boot-autoconfigure-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 20 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Неверное количество столбцов
+Column count does not match; SQL statement:
+INSERT INTO car VALUES ('Audi', '1234 AB-7', 1) [21002-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.prepare(Insert.java:319) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.prepareCommand(Parser.java:744) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareLocal(Session.java:657) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareCommand(Session.java:595) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.2.jar:na]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:601) ~[spring-jdbc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 36 common frames omitted
+
+2020-03-19 13:55:15.254  INFO 4064 --- [restartedMain] by.citytaxi.application.Application      : Starting Application on M25-419-11485 with PID 4064 (started by kazakevich_av in D:\Курсы\Практика\HomeWork\TaxiApp)
+2020-03-19 13:55:15.257  INFO 4064 --- [restartedMain] by.citytaxi.application.Application      : No active profile set, falling back to default profiles: default
+2020-03-19 13:55:15.359  INFO 4064 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\kazakevich_av\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-19 13:55:15.381  INFO 4064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-19 13:55:15.381  INFO 4064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-19 13:55:15.553  WARN 4064 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [by.citytaxi.application.Application]; nested exception is java.io.FileNotFoundException: class path resource [db.properties] cannot be opened because it does not exist
+2020-03-19 13:55:15.570 ERROR 4064 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [by.citytaxi.application.Application]; nested exception is java.io.FileNotFoundException: class path resource [db.properties] cannot be opened because it does not exist
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:188) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:319) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at by.citytaxi.application.Application.main(Application.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+Caused by: java.io.FileNotFoundException: class path resource [db.properties] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:180) ~[spring-core-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.core.io.support.EncodedResource.getInputStream(EncodedResource.java:159) ~[spring-core-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:99) ~[spring-core-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:73) ~[spring-core-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:59) ~[spring-core-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.core.io.support.ResourcePropertySource.<init>(ResourcePropertySource.java:67) ~[spring-core-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.core.io.support.DefaultPropertySourceFactory.createPropertySource(DefaultPropertySourceFactory.java:37) ~[spring-core-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processPropertySource(ConfigurationClassParser.java:462) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:279) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:198) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:303) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 18 common frames omitted
+
+2020-03-19 14:14:16.173  INFO 8972 --- [restartedMain] by.citytaxi.application.Application      : Starting Application on M25-419-11485 with PID 8972 (started by kazakevich_av in D:\Курсы\Практика\HomeWork\TaxiApp)
+2020-03-19 14:14:16.175  INFO 8972 --- [restartedMain] by.citytaxi.application.Application      : No active profile set, falling back to default profiles: default
+2020-03-19 14:14:16.236  INFO 8972 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\kazakevich_av\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/kazakevich_av/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-19 14:14:16.240  INFO 8972 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-19 14:14:16.240  INFO 8972 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-19 14:14:16.999  INFO 8972 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-19 14:14:17.059  INFO 8972 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43ms. Found 1 JPA repository interfaces.
+2020-03-19 14:14:17.503  INFO 8972 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-19 14:14:17.510  INFO 8972 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-19 14:14:17.510  INFO 8972 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-19 14:14:17.585  INFO 8972 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-19 14:14:17.586  INFO 8972 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1346 ms
+2020-03-19 14:14:17.615  INFO 8972 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-19 14:14:17.694  INFO 8972 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-19 14:14:17.699  INFO 8972 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-03-19 14:14:17.791  INFO 8972 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-19 14:14:17.835  INFO 8972 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-19 14:14:17.908  INFO 8972 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-19 14:14:17.979  INFO 8972 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-03-19 14:14:18.442  INFO 8972 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-19 14:14:18.447  INFO 8972 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-19 14:14:18.472  INFO 8972 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-19 14:14:18.478  WARN 8972 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Initialization of bean failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/D:/%d0%9a%d1%83%d1%80%d1%81%d1%8b/%d0%9f%d1%80%d0%b0%d0%ba%d1%82%d0%b8%d0%ba%d0%b0/HomeWork/TaxiApp/target/classes/data.sql]: INSERT INTO car VALUES ('Audi', '1234 AB-7', 1); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Неверное количество столбцов
+Column count does not match; SQL statement:
+INSERT INTO car VALUES ('Audi', '1234 AB-7', 1) [21002-200]
+2020-03-19 14:14:18.686  WARN 8972 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-03-19 14:14:18.687  INFO 8972 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-19 14:14:18.691  INFO 8972 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-19 14:14:18.693  INFO 8972 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-03-19 14:14:18.711  INFO 8972 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-19 14:14:18.720 ERROR 8972 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Initialization of bean failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/D:/%d0%9a%d1%83%d1%80%d1%81%d1%8b/%d0%9f%d1%80%d0%b0%d0%ba%d1%82%d0%b8%d0%ba%d0%b0/HomeWork/TaxiApp/target/classes/data.sql]: INSERT INTO car VALUES ('Audi', '1234 AB-7', 1); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Неверное количество столбцов
+Column count does not match; SQL statement:
+INSERT INTO car VALUES ('Audi', '1234 AB-7', 1) [21002-200]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at by.citytaxi.application.Application.main(Application.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/D:/%d0%9a%d1%83%d1%80%d1%81%d1%8b/%d0%9f%d1%80%d0%b0%d0%ba%d1%82%d0%b8%d0%ba%d0%b0/HomeWork/TaxiApp/target/classes/data.sql]: INSERT INTO car VALUES ('Audi', '1234 AB-7', 1); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Неверное количество столбцов
+Column count does not match; SQL statement:
+INSERT INTO car VALUES ('Audi', '1234 AB-7', 1) [21002-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:622) ~[spring-jdbc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:49) ~[spring-jdbc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.runScripts(DataSourceInitializer.java:202) ~[spring-boot-autoconfigure-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.initSchema(DataSourceInitializer.java:119) ~[spring-boot-autoconfigure-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:91) ~[spring-boot-autoconfigure-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:38) ~[spring-boot-autoconfigure-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.DataSourceInitializedPublisher.publishEventIfRequired(DataSourceInitializedPublisher.java:99) ~[spring-boot-autoconfigure-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.DataSourceInitializedPublisher.postProcessAfterInitialization(DataSourceInitializedPublisher.java:90) ~[spring-boot-autoconfigure-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 20 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Неверное количество столбцов
+Column count does not match; SQL statement:
+INSERT INTO car VALUES ('Audi', '1234 AB-7', 1) [21002-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.prepare(Insert.java:319) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.prepareCommand(Parser.java:744) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareLocal(Session.java:657) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareCommand(Session.java:595) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.2.jar:na]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:601) ~[spring-jdbc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 36 common frames omitted
+
