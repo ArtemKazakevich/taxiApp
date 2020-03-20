@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;
 import java.security.SecureRandom;
 import java.util.Optional;
-import java.util.Random;
 
 @Service
 @Transactional
@@ -43,7 +42,7 @@ public class UserServiceImpl implements UserService {
      }
      
      @Override
-     public void deleteUser(Long id, String token) {
+     public void deleteUser(Long id) {
           Optional<User> byId = userRepository.findById(id);
           if (byId.isPresent()) {
                userRepository.deleteById(id);

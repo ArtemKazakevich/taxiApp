@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserRequest {
-     private String token;
      private UserRoleEnum userRole;
      private User user;
 }

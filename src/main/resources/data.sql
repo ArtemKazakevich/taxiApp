@@ -1,4 +1,0 @@
-INSERT INTO car VALUES ('Audi', '1234 AB-7', 1);
-INSERT INTO car VALUES ('Audi', '1234 AB-7', 1);
-INSERT INTO car VALUES ('Audi', '1234 AB-7', 1);
-INSERT INTO car VALUES ('Audi', '1234 AB-7', 1);

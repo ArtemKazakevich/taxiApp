@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CarRequest {
-     private String token;
      private UserRoleEnum userRole;
      private Car car;
 }

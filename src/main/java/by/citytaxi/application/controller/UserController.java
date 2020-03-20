@@ -3,7 +3,6 @@ package by.citytaxi.application.controller;
 import by.citytaxi.application.exception.user.AuthenticationUserException;
 import by.citytaxi.application.exception.user.LoginUserException;
 import by.citytaxi.application.exception.user.RoleUserException;
-import by.citytaxi.application.exception.user.UserBadRequestException;
 import by.citytaxi.application.model.User;
 import by.citytaxi.application.model.request.UserRequest;
 import by.citytaxi.application.service.impl.UserServiceImpl;
@@ -32,7 +31,7 @@ public class UserController {
                                           @RequestHeader(name = "apiKey") String apiKey) {
           if (!userService.isLoggedIn(apiKey)) throw new LoginUserException();
           
-          log.info("The list is made");
+          log.info("The user impression was completed successfully");
           return new ResponseEntity<>(userService.getUser(id), HttpStatus.OK);
      }
      
@@ -62,7 +61,7 @@ public class UserController {
           if (!userService.isLoggedIn(apiKey)) throw new LoginUserException();
           if (!userService.isAdmin(userRequest.getUserRole())) throw new RoleUserException();
           
-          userService.deleteUser(id, userRequest.getToken());
+          userService.deleteUser(id);
           log.info("User with id={} was removed", id);
           return new ResponseEntity<>("The user was successfully deleted", HttpStatus.OK);
      }

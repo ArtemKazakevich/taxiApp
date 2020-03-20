@@ -1,0 +1,51 @@
+GET http://localhost:8080/car/1
+apiKey: [B@58b85bf3
+Content-Type: application/json
+
+{
+  "userRole": "ADMIN"
+}
+
+###
+
+POST http://localhost:8080/car
+apiKey: [B@58b85bf3
+Content-Type: application/json
+
+{
+  "userRole": "ADMIN",
+  "car": {
+    "id": 2,
+    "name": "Audi",
+    "number": "9999 AP-7",
+    "numberArea": 4
+  }
+}
+
+###
+
+PUT http://localhost:8080/car/1
+apiKey: [B@58b85bf3
+Content-Type: application/json
+
+{
+  "userRole": "ADMIN",
+  "car": {
+    "id": 1,
+    "name": "Audi A8",
+    "number": "9955 AP-7",
+    "numberArea": 4
+  }
+}
+
+###
+
+DELETE http://localhost:8080/car/1
+apiKey: [B@58b85bf3
+Content-Type: application/json
+
+{
+  "userRole": "ADMIN"
+}
+
+###

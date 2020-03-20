@@ -1,5 +1,5 @@
 GET http://localhost:8080/user/1
-apiKey: [B@3afd5148
+apiKey: [B@58b85bf3
 
 ###
 
@@ -19,7 +19,7 @@ Content-Type: application/json
 ###
 
 PUT http://localhost:8080/user/1
-apiKey: [B@3afd5148
+apiKey: [B@58b85bf3
 Content-Type: application/json
 
 {
@@ -31,14 +31,14 @@ Content-Type: application/json
     "lastName": "Test-string",
     "email": "Test-string@gmail.com",
     "password": "string",
-    "token": "[B@3afd5148"
+    "token": "[B@58b85bf3"
    }
   }
 
 ###
 
 DELETE http://localhost:8080/user/1
-apiKey: [B@3afd5148
+apiKey: [B@58b85bf3
 Content-Type: application/json
 
 {
@@ -61,6 +61,6 @@ Content-Type: application/json
 ###
 
 POST http://localhost:8080/user/logout
-apiKey: [B@3afd5148
+apiKey: [B@58b85bf3
 
 ###
