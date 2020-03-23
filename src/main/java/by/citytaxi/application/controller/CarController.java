@@ -13,6 +13,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.constraints.Min;
+import java.util.List;
 
 @RestController
 @RequestMapping(path = "/car")
@@ -71,5 +72,25 @@ public class CarController {
           carService.deleteCar(id);
           log.info("Car with id={} was removed", id);
           return new ResponseEntity<>("The car was successfully deleted", HttpStatus.OK);
+     }
+     
+     @PostMapping(path = "/sortName")
+     public ResponseEntity<List<Car>> sortNameCar(@RequestBody CarRequest carRequest,
+                                                  @RequestHeader(name = "apiKey") String apiKey) {
+          if (!userService.isLoggedIn(apiKey)) throw new LoginUserException();
+          if (!userService.isAdmin(carRequest.getUserRole())) throw new RoleUserException();
+          
+          log.info("Sorting by name is completed");
+          return new ResponseEntity<>(carService.sortNameCar(), HttpStatus.OK);
+     }
+     
+     @PostMapping(path = "/sortNumberArea")
+     public ResponseEntity<List<Car>> sortNumberAreaCar(@RequestBody CarRequest carRequest,
+                                                  @RequestHeader(name = "apiKey") String apiKey) {
+          if (!userService.isLoggedIn(apiKey)) throw new LoginUserException();
+          if (!userService.isAdmin(carRequest.getUserRole())) throw new RoleUserException();
+          
+          log.info("Sorting by area number is complete");
+          return new ResponseEntity<>(carService.sortNumberAreaCar(), HttpStatus.OK);
      }
 }

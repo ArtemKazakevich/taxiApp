@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.security.SecureRandom;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -88,5 +89,10 @@ public class UserServiceImpl implements UserService {
      @Override
      public boolean isAdmin(UserRoleEnum userRoleEnum) {
           return userRoleEnum.equals(UserRoleEnum.ADMIN);
+     }
+     
+     @Override
+     public List<User> sortLastNameUser() {
+          return userRepository.findAllLastNameUser();
      }
 }

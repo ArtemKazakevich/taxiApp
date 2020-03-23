@@ -1,5 +1,5 @@
 GET http://localhost:8080/user/1
-apiKey: [B@58b85bf3
+apiKey: [B@78df5f89
 
 ###
 
@@ -7,7 +7,6 @@ POST http://localhost:8080/user
 Content-Type: application/json
 
 {
-  "id": 1,
   "userRole": "ADMIN",
   "firstName": "string",
   "lastName": "string",
@@ -19,7 +18,7 @@ Content-Type: application/json
 ###
 
 PUT http://localhost:8080/user/1
-apiKey: [B@58b85bf3
+apiKey: [B@4c1c0b3
 Content-Type: application/json
 
 {
@@ -31,14 +30,14 @@ Content-Type: application/json
     "lastName": "Test-string",
     "email": "Test-string@gmail.com",
     "password": "string",
-    "token": "[B@58b85bf3"
+    "token": "[B@4c1c0b3"
    }
   }
 
 ###
 
-DELETE http://localhost:8080/user/1
-apiKey: [B@58b85bf3
+DELETE http://localhost:8080/user/2
+apiKey: [B@4c1c0b3
 Content-Type: application/json
 
 {
@@ -52,7 +51,6 @@ Content-Type: application/json
 
 {
   "user": {
-    "id": 1,
     "email": "string@gmail.com",
     "password": "string"
   }
@@ -61,6 +59,16 @@ Content-Type: application/json
 ###
 
 POST http://localhost:8080/user/logout
-apiKey: [B@58b85bf3
+apiKey: [B@4c1c0b3
+
+###
+
+POST http://localhost:8080/user/sortLastName
+apiKey: [B@15dee39d
+Content-Type: application/json
+
+{
+  "userRole": "ADMIN"
+}
 
 ###

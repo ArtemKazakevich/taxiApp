@@ -3,6 +3,8 @@ package by.citytaxi.application.service;
 import by.citytaxi.application.model.User;
 import by.citytaxi.application.model.enums.UserRoleEnum;
 
+import java.util.List;
+
 public interface UserService {
      
      void addUser(User user);
@@ -20,4 +22,6 @@ public interface UserService {
      boolean isLoggedIn(String token);
      
      boolean isAdmin(UserRoleEnum userRoleEnum);
+     
+     List<User> sortLastNameUser();
 }

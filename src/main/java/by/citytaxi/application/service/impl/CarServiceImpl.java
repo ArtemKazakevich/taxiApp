@@ -5,9 +5,11 @@ import by.citytaxi.application.model.Car;
 import by.citytaxi.application.repository.CarRepository;
 import by.citytaxi.application.service.CarService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -44,5 +46,15 @@ public class CarServiceImpl implements CarService {
           if (byId.isPresent()) {
                carRepository.deleteById(id);
           } else throw new CarNotFoundException();
+     }
+     
+     @Override
+     public List<Car> sortNameCar() {
+          return carRepository.findAllNameCars();
+     }
+     
+     @Override
+     public List<Car> sortNumberAreaCar() {
+          return carRepository.findAllNumberAreaCars();
      }
 }

@@ -3,7 +3,9 @@ package by.citytaxi.application.controller;
 import by.citytaxi.application.exception.user.AuthenticationUserException;
 import by.citytaxi.application.exception.user.LoginUserException;
 import by.citytaxi.application.exception.user.RoleUserException;
+import by.citytaxi.application.model.Car;
 import by.citytaxi.application.model.User;
+import by.citytaxi.application.model.request.CarRequest;
 import by.citytaxi.application.model.request.UserRequest;
 import by.citytaxi.application.service.impl.UserServiceImpl;
 import lombok.extern.slf4j.Slf4j;
@@ -14,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Min;
+import java.util.List;
 
 @RestController
 @RequestMapping(path = "/user")
@@ -82,5 +85,15 @@ public class UserController {
           userService.logout(apiKey);
           log.info("Exit successfully completed");
           return new ResponseEntity<>("Exit successfully completed", HttpStatus.OK);
+     }
+     
+     @PostMapping(path = "/sortLastName")
+     public ResponseEntity<List<User>> sortNameCar(@RequestBody UserRequest userRequest,
+                                                  @RequestHeader(name = "apiKey") String apiKey) {
+          if (!userService.isLoggedIn(apiKey)) throw new LoginUserException();
+          if (!userService.isAdmin(userRequest.getUserRole())) throw new RoleUserException();
+          
+          log.info("Sorting by name is completed");
+          return new ResponseEntity<>(userService.sortLastNameUser(), HttpStatus.OK);
      }
 }
