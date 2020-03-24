@@ -1,11 +1,11 @@
 package by.citytaxi.application.service.impl;
 
 import by.citytaxi.application.exception.car.CarNotFoundException;
+import by.citytaxi.application.exception.car.CarStatusException;
 import by.citytaxi.application.model.Car;
 import by.citytaxi.application.repository.CarRepository;
 import by.citytaxi.application.service.CarService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
@@ -56,5 +56,15 @@ public class CarServiceImpl implements CarService {
      @Override
      public List<Car> sortNumberAreaCar() {
           return carRepository.findAllNumberAreaCars();
+     }
+     
+     @Override
+     public void callCar(Car car) {
+          Optional<Car> byNumberAreaAndAndStatus = carRepository.findCarByNumberAreaAndStatus(car.getNumberArea(), car.isStatus());
+          if (byNumberAreaAndAndStatus.isPresent()) {
+               Car newCar = byNumberAreaAndAndStatus.get();
+               newCar.setStatus(true);
+               carRepository.save(newCar);
+          } else throw new CarStatusException();
      }
 }

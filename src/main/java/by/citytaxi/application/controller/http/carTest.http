@@ -17,7 +17,8 @@ Content-Type: application/json
   "car": {
     "name": "Kia",
     "number": "1111 AP-7",
-    "numberArea": 3
+    "numberArea": 3,
+    "status": false
   }
 }
 
@@ -33,7 +34,8 @@ Content-Type: application/json
     "id": 20,
     "name": "Audi A8",
     "number": "9955 AP-7",
-    "numberArea": 4
+    "numberArea": 4,
+    "status": false
   }
 }
 
@@ -50,7 +52,7 @@ Content-Type: application/json
 ###
 
 POST http://localhost:8080/car/sortName
-apiKey: [B@15dee39d
+apiKey: [B@5bf442bb
 Content-Type: application/json
 
 {
@@ -60,11 +62,24 @@ Content-Type: application/json
 ###
 
 POST http://localhost:8080/car/sortNumberArea
-apiKey: [B@15dee39d
+apiKey: [B@2c057e90
 Content-Type: application/json
 
 {
   "userRole": "ADMIN"
+}
+
+###
+
+POST http://localhost:8080/car/callCar
+apiKey: [B@491b2b63
+Content-Type: application/json
+
+{
+  "car": {
+    "numberArea": 1,
+    "status": false
+  }
 }
 
 ###

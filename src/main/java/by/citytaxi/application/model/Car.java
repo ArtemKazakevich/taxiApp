@@ -26,4 +26,5 @@ public class Car {
      private String name;
      private String number;
      private int numberArea;
+     private boolean status;
 }

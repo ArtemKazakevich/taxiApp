@@ -86,11 +86,21 @@ public class CarController {
      
      @PostMapping(path = "/sortNumberArea")
      public ResponseEntity<List<Car>> sortNumberAreaCar(@RequestBody CarRequest carRequest,
-                                                  @RequestHeader(name = "apiKey") String apiKey) {
+                                                        @RequestHeader(name = "apiKey") String apiKey) {
           if (!userService.isLoggedIn(apiKey)) throw new LoginUserException();
           if (!userService.isAdmin(carRequest.getUserRole())) throw new RoleUserException();
           
           log.info("Sorting by area number is complete");
           return new ResponseEntity<>(carService.sortNumberAreaCar(), HttpStatus.OK);
+     }
+     
+     @PostMapping(path = "/callCar")
+     public ResponseEntity<String> callCar(@RequestBody CarRequest carRequest,
+                                           @RequestHeader(name = "apiKey") String apiKey) {
+          if (!userService.isLoggedIn(apiKey)) throw new LoginUserException();
+          
+          carService.callCar(carRequest.getCar());
+          log.info("Call accepted");
+          return new ResponseEntity<>("Call accepted", HttpStatus.OK);
      }
 }

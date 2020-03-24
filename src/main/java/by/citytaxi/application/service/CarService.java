@@ -17,4 +17,6 @@ public interface CarService {
      List<Car> sortNameCar();
      
      List<Car> sortNumberAreaCar();
+     
+     void callCar(Car car);
 }

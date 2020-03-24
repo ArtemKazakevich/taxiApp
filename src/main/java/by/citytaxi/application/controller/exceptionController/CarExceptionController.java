@@ -1,6 +1,7 @@
 package by.citytaxi.application.controller.exceptionController;
 
 import by.citytaxi.application.exception.car.CarNotFoundException;
+import by.citytaxi.application.exception.car.CarStatusException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -25,5 +26,11 @@ public class CarExceptionController extends ResponseEntityExceptionHandler {
      public ResponseEntity<String> exCarNotFound() {
           log.warn("Car not found");
           return new ResponseEntity<>("Car not found", HttpStatus.NOT_FOUND);
+     }
+     
+     @ExceptionHandler(CarStatusException.class)
+     public ResponseEntity<String> exCarStatus() {
+          log.warn("There are no available cars");
+          return new ResponseEntity<>("Sorry, all the cars are busy at the moment", HttpStatus.NOT_FOUND);
      }
 }

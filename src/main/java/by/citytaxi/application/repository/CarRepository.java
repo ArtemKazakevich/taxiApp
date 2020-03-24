@@ -5,6 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface CarRepository extends JpaRepository<Car, Long> {
      
@@ -13,4 +14,6 @@ public interface CarRepository extends JpaRepository<Car, Long> {
      
      @Query(value = "SELECT * FROM car ORDER BY number_area", nativeQuery = true)
      List<Car> findAllNumberAreaCars();
+     
+     Optional<Car> findCarByNumberAreaAndStatus(int numberArea, boolean status);
 }
