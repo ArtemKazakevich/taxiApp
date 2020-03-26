@@ -1,6 +1,7 @@
 package by.citytaxi.application.service;
 
 import by.citytaxi.application.model.Car;
+import by.citytaxi.application.model.User;
 
 import java.util.List;
 
@@ -18,5 +19,5 @@ public interface CarService {
      
      List<Car> sortNumberAreaCar();
      
-     void callCar(Car car);
+     void callCar(Car car, User user);
 }

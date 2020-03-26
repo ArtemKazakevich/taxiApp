@@ -33,4 +33,6 @@ public class User {
      @NotBlank
      private String password;
      private String token;
+     private double latitude;
+     private double longitude;
 }

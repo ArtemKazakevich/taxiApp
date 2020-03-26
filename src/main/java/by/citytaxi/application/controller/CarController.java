@@ -99,7 +99,7 @@ public class CarController {
                                            @RequestHeader(name = "apiKey") String apiKey) {
           if (!userService.isLoggedIn(apiKey)) throw new LoginUserException();
           
-          carService.callCar(carRequest.getCar());
+          carService.callCar(carRequest.getCar(), carRequest.getUser());
           log.info("Call accepted");
           return new ResponseEntity<>("Call accepted", HttpStatus.OK);
      }

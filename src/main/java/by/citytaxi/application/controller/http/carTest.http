@@ -62,7 +62,7 @@ Content-Type: application/json
 ###
 
 POST http://localhost:8080/car/sortNumberArea
-apiKey: [B@2c057e90
+apiKey: [B@3dfdae7b
 Content-Type: application/json
 
 {
@@ -72,13 +72,17 @@ Content-Type: application/json
 ###
 
 POST http://localhost:8080/car/callCar
-apiKey: [B@491b2b63
+apiKey: [B@325aba4e
 Content-Type: application/json
 
 {
   "car": {
     "numberArea": 1,
     "status": false
+  },
+  "user": {
+    "latitude": 53.886346,
+    "longitude":27.427766
   }
 }
 

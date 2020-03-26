@@ -10,7 +10,7 @@ Content-Type: application/json
   "userRole": "ADMIN",
   "firstName": "string",
   "lastName": "string",
-  "email": "string@gmail.com",
+  "email": "test@gmail.com",
   "password": "string",
   "token": null
   }
@@ -51,7 +51,7 @@ Content-Type: application/json
 
 {
   "user": {
-    "email": "string@gmail.com",
+    "email": "test@gmail.com",
     "password": "string"
   }
 }

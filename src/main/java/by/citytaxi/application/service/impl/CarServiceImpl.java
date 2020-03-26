@@ -3,14 +3,17 @@ package by.citytaxi.application.service.impl;
 import by.citytaxi.application.exception.car.CarNotFoundException;
 import by.citytaxi.application.exception.car.CarStatusException;
 import by.citytaxi.application.model.Car;
+import by.citytaxi.application.model.User;
 import by.citytaxi.application.repository.CarRepository;
 import by.citytaxi.application.service.CarService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.Random;
 
 @Service
 @Transactional
@@ -20,6 +23,9 @@ public class CarServiceImpl implements CarService {
      @Autowired
      public CarServiceImpl(CarRepository carRepository) {
           this.carRepository = carRepository;
+     }
+     
+     public CarServiceImpl() {
      }
      
      @Override
@@ -58,13 +64,30 @@ public class CarServiceImpl implements CarService {
           return carRepository.findAllNumberAreaCars();
      }
      
+//     here extra loops are only used for the application test
      @Override
-     public void callCar(Car car) {
-          Optional<Car> byNumberAreaAndAndStatus = carRepository.findCarByNumberAreaAndStatus(car.getNumberArea(), car.isStatus());
-          if (byNumberAreaAndAndStatus.isPresent()) {
-               Car newCar = byNumberAreaAndAndStatus.get();
-               newCar.setStatus(true);
-               carRepository.save(newCar);
-          } else throw new CarStatusException();
+     public void callCar(Car car, User user) {
+          List<Car> listCarNumberArea = carRepository.findAllByNumberAreaAndStatus(car.getNumberArea(), car.isStatus());
+          int carMinTime = listCarNumberArea.get(0).getTime();
+          
+          for (Car value : listCarNumberArea) {
+               Random random = new Random();
+               int timeCar = random.nextInt(11) + 5;
+               value.setTime(timeCar);
+          }
+     
+          for (Car value : listCarNumberArea) {
+               if (value.getTime() < carMinTime) {
+                    carMinTime = value.getTime();
+               }
+          }
+          
+          for (Car value : listCarNumberArea) {
+               if (!value.isStatus() && value.getTime() == carMinTime) {
+                    value.setStatus(true);
+                    carRepository.save(value);
+                    break;
+               }
+          }
      }
 }
