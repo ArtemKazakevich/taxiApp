@@ -1,5 +1,16 @@
+#You can test the following requests in this http file:
+#- output the user id
+#- creating a new user
+#- change
+#- removal
+#- entrance
+#- exit
+#- sort by last name
+#- calling a car
+#- arrival of the user
+
 GET http://localhost:8080/user/1
-apiKey: [B@78df5f89
+apiKey: [B@6f88d878
 
 ###
 
@@ -12,13 +23,18 @@ Content-Type: application/json
   "lastName": "string",
   "email": "test@gmail.com",
   "password": "string",
-  "token": null
-  }
+  "token": null,
+  "geolocationUser": {
+    "latitude": 0.0,
+    "longitude":0.0
+  },
+  "numberCar": null
+}
 
 ###
 
 PUT http://localhost:8080/user/1
-apiKey: [B@4c1c0b3
+apiKey: [B@6f88d878
 Content-Type: application/json
 
 {
@@ -26,18 +42,23 @@ Content-Type: application/json
   "user": {
     "id": 1,
     "userRole": "ADMIN",
-    "firstName": "Test-string",
-    "lastName": "Test-string",
-    "email": "Test-string@gmail.com",
+    "firstName": "test-string",
+    "lastName": "test-string",
+    "email": "test-string@gmail.com",
     "password": "string",
-    "token": "[B@4c1c0b3"
-   }
+    "token": "[B@6f88d878",
+    "geolocationUser": {
+      "latitude": 0.0,
+      "longitude":0.0
+    },
+    "numberCar": null
   }
+}
 
 ###
 
 DELETE http://localhost:8080/user/2
-apiKey: [B@4c1c0b3
+apiKey: [B@6f88d878
 Content-Type: application/json
 
 {
@@ -59,16 +80,40 @@ Content-Type: application/json
 ###
 
 POST http://localhost:8080/user/logout
-apiKey: [B@4c1c0b3
+apiKey: [B@6f88d878
 
 ###
 
 POST http://localhost:8080/user/sortLastName
-apiKey: [B@15dee39d
+apiKey: [B@6f88d878
 Content-Type: application/json
 
 {
   "userRole": "ADMIN"
 }
+
+###
+
+POST http://localhost:8080/user/callCar
+apiKey: [B@535a11ae
+Content-Type: application/json
+
+{
+  "car": {
+    "numberArea": 1,
+    "status": false
+  },
+  "user": {
+    "geolocationUser": {
+      "latitude": 53.886346,
+      "longitude": 27.427766
+    }
+  }
+}
+
+###
+
+POST http://localhost:8080/user/userArrived
+apiKey: [B@535a11ae
 
 ###

@@ -93,14 +93,4 @@ public class CarController {
           log.info("Sorting by area number is complete");
           return new ResponseEntity<>(carService.sortNumberAreaCar(), HttpStatus.OK);
      }
-     
-     @PostMapping(path = "/callCar")
-     public ResponseEntity<String> callCar(@RequestBody CarRequest carRequest,
-                                           @RequestHeader(name = "apiKey") String apiKey) {
-          if (!userService.isLoggedIn(apiKey)) throw new LoginUserException();
-          
-          carService.callCar(carRequest.getCar(), carRequest.getUser());
-          log.info("Call accepted");
-          return new ResponseEntity<>("Call accepted", HttpStatus.OK);
-     }
 }

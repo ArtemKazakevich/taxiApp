@@ -3,10 +3,12 @@ package by.citytaxi.application.controller;
 import by.citytaxi.application.exception.user.AuthenticationUserException;
 import by.citytaxi.application.exception.user.LoginUserException;
 import by.citytaxi.application.exception.user.RoleUserException;
+import by.citytaxi.application.exception.user.UserNotFoundException;
 import by.citytaxi.application.model.Car;
 import by.citytaxi.application.model.User;
 import by.citytaxi.application.model.request.CarRequest;
 import by.citytaxi.application.model.request.UserRequest;
+import by.citytaxi.application.repository.UserRepository;
 import by.citytaxi.application.service.impl.UserServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -17,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import javax.validation.constraints.Min;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping(path = "/user")
@@ -24,9 +27,11 @@ import java.util.List;
 @Slf4j
 public class UserController {
      private UserServiceImpl userService;
-     
-     public UserController(UserServiceImpl userService) {
+     private UserRepository userRepository;
+
+     public UserController(UserServiceImpl userService, UserRepository userRepository) {
           this.userService = userService;
+          this.userRepository = userRepository;
      }
      
      @GetMapping(path = "/{id}")
@@ -77,12 +82,18 @@ public class UserController {
           log.info("Login completed");
           return new ResponseEntity<>(token, HttpStatus.OK);
      }
-     
+
      @PostMapping(path = "/logout")
      public ResponseEntity<String> logoutUser(@RequestHeader(name = "apiKey") String apiKey) {
           if (!userService.isLoggedIn(apiKey)) throw new LoginUserException();
-          
-          userService.logout(apiKey);
+
+          Optional<User> byToken = userRepository.findUserByToken(apiKey);
+          if (byToken.isPresent()) {
+               User user = byToken.get();
+               user.setToken(null);
+               userRepository.save(user);
+          } else throw new UserNotFoundException();
+
           log.info("Exit successfully completed");
           return new ResponseEntity<>("Exit successfully completed", HttpStatus.OK);
      }
@@ -95,5 +106,24 @@ public class UserController {
           
           log.info("Sorting by name is completed");
           return new ResponseEntity<>(userService.sortLastNameUser(), HttpStatus.OK);
+     }
+
+     @PostMapping(path = "/callCar")
+     public ResponseEntity<String> userCallCar(@RequestBody CarRequest carRequest,
+                                               @RequestHeader(name = "apiKey") String apiKey) {
+          if (!userService.isLoggedIn(apiKey)) throw new LoginUserException();
+
+          userService.userCallCar(carRequest.getCar(), carRequest.getUser(), apiKey);
+          log.info("Call accepted");
+          return new ResponseEntity<>("Call accepted", HttpStatus.OK);
+     }
+
+     @PostMapping(path = "/userArrived")
+     public ResponseEntity<String> userArrived(@RequestHeader(name = "apiKey") String apiKey) {
+          if (!userService.isLoggedIn(apiKey)) throw new LoginUserException();
+
+          userService.userArrived(apiKey);
+          log.info("The person was successfully delivered");
+          return new ResponseEntity<>("The person was successfully delivered", HttpStatus.OK);
      }
 }

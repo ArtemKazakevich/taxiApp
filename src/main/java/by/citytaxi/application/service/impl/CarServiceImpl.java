@@ -63,31 +63,4 @@ public class CarServiceImpl implements CarService {
      public List<Car> sortNumberAreaCar() {
           return carRepository.findAllNumberAreaCars();
      }
-     
-//     here extra loops are only used for the application test
-     @Override
-     public void callCar(Car car, User user) {
-          List<Car> listCarNumberArea = carRepository.findAllByNumberAreaAndStatus(car.getNumberArea(), car.isStatus());
-          int carMinTime = listCarNumberArea.get(0).getTime();
-          
-          for (Car value : listCarNumberArea) {
-               Random random = new Random();
-               int timeCar = random.nextInt(11) + 5;
-               value.setTime(timeCar);
-          }
-     
-          for (Car value : listCarNumberArea) {
-               if (value.getTime() < carMinTime) {
-                    carMinTime = value.getTime();
-               }
-          }
-          
-          for (Car value : listCarNumberArea) {
-               if (!value.isStatus() && value.getTime() == carMinTime) {
-                    value.setStatus(true);
-                    carRepository.save(value);
-                    break;
-               }
-          }
-     }
 }

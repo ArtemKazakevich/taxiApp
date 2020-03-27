@@ -1,5 +1,6 @@
 package by.citytaxi.application.service;
 
+import by.citytaxi.application.model.Car;
 import by.citytaxi.application.model.User;
 import by.citytaxi.application.model.enums.UserRoleEnum;
 
@@ -17,11 +18,13 @@ public interface UserService {
      
      String authentication(User user);
      
-     void logout(String token);
-     
      boolean isLoggedIn(String token);
      
      boolean isAdmin(UserRoleEnum userRoleEnum);
      
      List<User> sortLastNameUser();
+
+     void userCallCar(Car car, User user, String token);
+
+     void userArrived(String token);
 }

@@ -13,18 +13,18 @@ public class UserServiceTest {
      
      @BeforeEach
      public void createNewUser() {
-          userService = new UserServiceImpl();
-          user = new User(
-                 0,
-                  UserRoleEnum.ADMIN,
-                 "string",
-                 "string",
-                 "string@gmail.com ",
-                  "string",
-                  "string",
-                  0.0,
-                  0.0
-          );
-          userService.addUser(user);
+//          userService = new UserServiceImpl();
+//          user = new User(
+//                 0,
+//                  UserRoleEnum.ADMIN,
+//                 "string",
+//                 "string",
+//                 "string@gmail.com ",
+//                  "string",
+//                  "string",
+//                  0.0,
+//                  0.0
+//          );
+//          userService.addUser(user);
      }
 }
