@@ -7,7 +7,7 @@
 * `REST`
 * `JUnit`
 * `SLF4j`
+* `Spring Data JPA`
 
 ## **База данных**
 * `H2`
-* `Spring Data JPA`
